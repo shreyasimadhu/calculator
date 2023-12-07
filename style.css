@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Monomaniac+One&display=swap');
 
+body{
+    min-height: 100vh;
+    background: #edf1f4;
+}
+
+.fm{
+    font: bold 20px 'Concert One', sans-serif;
+}
+
+.txt{
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: transparent;
+    -webkit-text-fill-color: transparent;
+}
 
 .shreyasi h2{
     margin: 0;
     font-family: 'Concert One', sans-serif;
     color: #0bceaf;
     font-size: 40px;
-    -webkit-text-stroke: 1px #0bceaf;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 20px 20px 30px #0000002a;
     margin-bottom: 5px;
+    opacity: 0.5;
 }
 
 fieldset{
@@ -17,14 +34,13 @@ fieldset{
     margin: 0 auto;
     padding: 25px;
     border-radius: 5px;
-    box-shadow:50px 50px 400px gray;
-    border: 2px solid #0bceaf;
+    box-shadow: 5px 5px 7px #ccc, -5px -5px 5px #fff;
+    border: 2px solid #fff;
 }
 
 legend{
     text-align: center;
-    font-family: 'Concert One', sans-serif;
-    color: #0bceaf;
+    opacity: 0.5;
 }
 .d-flex{
     display: flex;
@@ -35,18 +51,26 @@ legend{
 input[type="text"]{
     text-align: center;
     outline: none;
-    border: 2px solid #0bceaf;
+    border: none;
+    /* background-color: #fff; */
+    /* border: 2px solid #0bceaf; */
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: 20px 20px 30px grey inset;
+    /* box-shadow: 20px 20px 30px grey inset; */
+    box-shadow:inset 5px 5px 7px #ccc, inset -5px -5px 5px #fff;
 }
 
 input[type="text"]::placeholder{
-    color: grey;
-    opacity: 0.2;
-    font-family: 'Monomaniac One', sans-serif;
+    font: bold 20px 'Concert One', sans-serif;
+    background-color: #565656;
+    opacity: 0.1;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 .main-btn-group{
@@ -66,11 +90,15 @@ input[type="button"]{
     width: 50px;
     border-radius: 50%;
     color: white;
-    background-color: #0bceaf;
+    background: #0bceaf;
     outline: none;
     border: 2px solid #0bceaf;
     cursor: pointer;
     padding: 5px 10px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
 }
+
+
