@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Monomaniac+One&display=swap');
+
+
+.shreyasi h2{
+    margin: 0;
+    font-family: 'Concert One', sans-serif;
+    color: #0bceaf;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #0bceaf;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 20px 20px 30px #0000002a;
+    margin-bottom: 5px;
+}
+
+fieldset{
+    width: 300px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow:50px 50px 400px gray;
+    border: 2px solid #0bceaf;
+}
+
+legend{
+    text-align: center;
+    font-family: 'Concert One', sans-serif;
+    color: #0bceaf;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]{
+    text-align: center;
+    outline: none;
+    border: 2px solid #0bceaf;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px grey inset;
+}
+
+input[type="text"]::placeholder{
+    color: grey;
+    opacity: 0.2;
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+.main-btn-group{
+    margin-top: 20px;
+}
+
+input[type="button"]{
+    margin: 15px;
+    box-shadow: 20px 20px 30px grey;
+}
+
+
+.form-control{
+    font-family: 'Concert One', sans-serif;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: #0bceaf;
+    outline: none;
+    border: 2px solid #0bceaf;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
