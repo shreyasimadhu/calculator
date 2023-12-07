@@ -23,38 +23,38 @@
                 <div class="main-btn-group">
 
                     <div class="btn-group d-flex">
+                        <input type="button" class="form-control" value="&comp;" onclick="display.value = ''">
+                        <input type="button" class="form-control" value="&and;" onclick="display.value = eval(display.value*display.value)">
+                        <input type="button" class="form-control" value="&#8729;" onclick="display.value += '.'">
+                        <input type="button" class="form-control" value="&plus;" onclick="display.value += '+'">
+                    </div>
+
+                    <div class="btn-group d-flex">
                         <input type="button" class="form-control" value="7" onclick="display.value += '7'">
                         <input type="button" class="form-control" value="8" onclick="display.value += '8'">
                         <input type="button" class="form-control" value="9" onclick="display.value += '9'">
-                        <input type="button" class="form-control" value="&plus;" onclick="display.value += '+'">
+                        <input type="button" class="form-control" value="&minus;" onclick="display.value += '-'">
                     </div>
 
                     <div class="btn-group d-flex">
                         <input type="button" class="form-control" value="4" onclick="display.value += '4'">
                         <input type="button" class="form-control" value="5" onclick="display.value += '5'">
                         <input type="button" class="form-control" value="6" onclick="display.value += '6'">
-                        <input type="button" class="form-control" value="&minus;" onclick="display.value += '-'">
+                        <input type="button" class="form-control" value="&times;" onclick="display.value += '*'">
                     </div>
 
                     <div class="btn-group d-flex">
                         <input type="button" class="form-control" value="1" onclick="display.value += '1'">
                         <input type="button" class="form-control" value="2" onclick="display.value += '2'">
                         <input type="button" class="form-control" value="3" onclick="display.value += '3'">
-                        <input type="button" class="form-control" value="&times;" onclick="display.value += '*'">
+                        <input type="button" class="form-control" value="&divide;" onclick="display.value += '/'">
                     </div>
 
                     <div class="btn-group d-flex">
                         <input type="button" class="form-control" value="&pi;" onclick="display.value += '3.1416'">
-                        <input type="button" class="form-control" value="&and;" onclick="display.value = eval(display.value*display.value)">
-                        <input type="button" class="form-control" value="&#8729;" onclick="display.value += '.'">
-                        <input type="button" class="form-control" value="&percnt;" onclick="display.value = eval(display.value/100)">
-                    </div>
-
-                    <div class="btn-group d-flex">
-                        <input type="button" class="form-control" value="&comp;" onclick="display.value = ''">
                         <input type="button" class="form-control" value="0" onclick="display.value += '0'">
                         <input type="button" class="form-control" value="=" onclick="display.value = eval(display.value)">
-                        <input type="button" class="form-control" value="&divide;" onclick="display.value += '/'">
+                        <input type="button" class="form-control" value="&percnt;" onclick="display.value = eval(display.value/100)">
                     </div>
 
                 </div>
