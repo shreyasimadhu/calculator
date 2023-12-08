@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <fieldset>
             <legend class="txt fm">SM Calculator</legend>
-            <form action="">
+            <form action="" name="cform">
                 <div class="calculator-display d-flex">
                     <input type="text" class="txt" name="calculatorDisplay" placeholder="Calculator Display" readonly>
                 </div>
@@ -53,10 +53,16 @@
                     </div>
 
                     <div class="btn-group d-flex">
-                        <input type="button" class="form-control" value="&pi;" onclick="calculatorDisplay.value += '3.1416'">
+                        <input type="button" class="form-control" value="&pi;" onclick="calculatorDisplay.value += '3.14159265359'">
                         <input type="button" class="form-control" value="0" onclick="calculatorDisplay.value += '0'">
                         <input type="button" class="form-control" value="=" onclick="calculatorDisplay.value = eval(calculatorDisplay.value)">
                         <input type="button" class="form-control" value="&percnt;" onclick="calculatorDisplay.value = eval(calculatorDisplay.value/100)">
+                    </div>
+
+        
+
+                    <div class="btn-group d-flex">
+                        <input type="button" id="backbtn" class="form-control" value="&larr;" onclick="backspace()">
                     </div>
 
                 </div>
@@ -64,5 +70,7 @@
         </fieldset>
     </div>
     
+
+    <script src="./main.js"></script>
 </body>
 </html>
