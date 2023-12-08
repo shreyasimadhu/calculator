@@ -25,7 +25,7 @@ body{
     font-family: 'Concert One', sans-serif;
     color: #0bceaf;
     font-size: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     opacity: 0.5;
 }
 
@@ -49,7 +49,7 @@ legend{
 }
 
 input[type="text"]{
-    text-align: center;
+    text-align: right;
     outline: none;
     border: none;
     /* background-color: #fff; */
@@ -63,6 +63,7 @@ input[type="text"]{
 }
 
 input[type="text"]::placeholder{
+    text-align: center;
     font: bold 20px 'Concert One', sans-serif;
     background-color: #565656;
     opacity: 0.1;
@@ -101,4 +102,9 @@ input[type="button"]{
     -webkit-text-fill-color: transparent;
 }
 
+#backbtn{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
 
