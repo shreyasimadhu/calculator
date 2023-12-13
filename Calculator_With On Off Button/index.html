@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <fieldset>
+            <legend>Calculator</legend>
+            <form action="" name="calculator" id="allForm">
+                <div class="dislpaySection d-flex">
+                    <input type="text" placeholder="Calculator Display" id="dsply" readonly>
+                </div>
+
+                <div class="main-button-group">
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="&comp;" onclick="calculator.display.value = '' ">
+                        <input type="button" value="&and;" onclick="calculator.display.value = eval(calculator.display.value*calculator.display.value) ">
+                        <input type="button" value="&#8729;" onclick="calculator.display.value += '.' ">
+                        <input type="button" value="&plus;" onclick="calculator.display.value += '+' ">
+                    </div>
+
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="7" onclick="calculator.display.value += '7' ">
+                        <input type="button" value="8" onclick="calculator.display.value += '8' ">
+                        <input type="button" value="9" onclick="calculator.display.value += '9' ">
+                        <input type="button" value="&minus;" onclick="calculator.display.value += '-' ">
+                    </div>
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="4" onclick="calculator.display.value += '4' ">
+                        <input type="button" value="5" onclick="calculator.display.value += '5' ">
+                        <input type="button" value="6" onclick="calculator.display.value += '6' ">
+                        <input type="button" value="&times;" onclick="calculator.display.value += '*' ">
+                    </div>
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="1" onclick="calculator.display.value += '1' ">
+                        <input type="button" value="2" onclick="calculator.display.value += '2' ">
+                        <input type="button" value="3" onclick="calculator.display.value += '3' ">
+                        <input type="button" value="&divide;" onclick="calculator.display.value += '/' ">
+                    </div>
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="&pi;" onclick="calculator.display.value += '3.14159265359' ">
+                        <input type="button" value="0" onclick="calculator.display.value += '0' ">
+                        <input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value) ">
+                        <input type="button" value="&percnt;" onclick="calculator.display.value = eval(calculator.display.value/100)">
+                    </div>
+
+                    <div class="btn-group d-flex">
+                        <input type="button" value="&larr;" onclick="backButton()" id="backbtn">
+                    </div>
+
+                    
+
+                </div>
+            </form>
+            <div class="btn-group d-flex">
+                <input type="checkbox" value="&larr;" onclick="myForm()" id="myForm">
+                <input type="checkbox" value="&larr;" onclick="myOnOffFunc()" id="onoff">
+            </div>
+        </fieldset>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
